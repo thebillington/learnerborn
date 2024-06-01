@@ -13,14 +13,11 @@ export default function CardSlot(props: ICardSlot) {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = rect.left + rect.width / 2;
     const y = rect.top;
-    console.log(x, y, rect.width, rect.height);
     setHoverPosition({ x, y });
     setShowFullImage(true);
   };
 
-
   const onMouseLeave = () => {
-    console.log("leaving", showFullImage)
     setShowFullImage(false);
   }
 
